@@ -1,0 +1,136 @@
+.Top {
+  height: 35px;
+}
+#call {
+  fill: #00aff0;
+}
+#twitter {
+  fill: #00aff0;
+}
+#youtube {
+  fill: #aa2200;
+}
+#facebook {
+  fill: #4267b2;
+}
+.text {
+  font-size: 14px;
+}
+.menu--center {
+  background-color: #e9e9e9;
+}
+.menu--center ul li {
+  font-weight: 600;
+  width: 185.142857px;
+  height: 40px;
+  line-height: 40px;
+}
+.menu--center ul li a {
+  color: rgb(89, 89, 89);
+  text-decoration: none;
+}
+.menu--center ul li:hover {
+  background-color: #f9bd3b;
+  border-bottom: 3px solid #e7b448;
+  transition: 1.25s;
+}
+.menu--center ul li a:hover {
+  color: white;
+}
+@media screen and (max-width: 576px) {
+  .Top {
+    display: none;
+  }
+  .Menu__hide {
+    display: none;
+  }
+  #stk_unline_hide {
+    fill: rgb(110, 110, 110);
+  }
+}
+#stk_line_hide {
+
+  
+}
+/* 
+#stk_unline_hide {
+  position: absolute;
+
+  fill: rgb(0, 0, 0);
+
+} */
+@media screen and (min-width: 576px) {
+  #stk_line_hide {
+    display: none;
+  }
+  #stk_unline_hide {
+    display: none;
+  }
+  .Menu__hide {
+    display: block;
+  }
+}
+#sub_menu {
+  display: none;
+  background-color: #e9e9e9;
+}
+.sub-menu2 {
+  display: none;
+  background-color: #e9e9e9;
+  position: relative;
+  left: 185px;
+  bottom: 40px;
+}
+.menu--center ul li:hover #sub_menu {
+  display: block;
+}
+.menu--center ul li #sub_menu:hover .icon__row {
+}
+.menu--center ul li .menu-2:hover .sub-menu2 {
+  display: block;
+}
+
+.menu--center ul li:hover #hide {
+  display: none;
+}
+.icon__row {
+  position: absolute;
+  rotate: -180deg;
+  animation-name: row_toright;
+  fill: #898989;
+  stroke: 3px;
+}
+@keyframes row_toright {
+  0% {
+    margin-left: 0px;
+    opacity: 0%;
+  }
+  50% {
+    margin-left: 90px;
+    opacity: 30%;
+  }
+  100% {
+    margin-left: 140px;
+    opacity: 100%;
+  }
+}
+.icon__row3 {
+  position: absolute;
+  rotate: -90deg;
+  margin-left: 140px;
+  fill: #898989;
+  stroke: 3px;
+}
+#li_2:hover .icon__row {
+  rotate: -90deg;
+  transition: 1s;
+  margin-left: 140px;
+}
+.menu-2:hover .icon__row3 {
+  rotate: -180deg;
+  transition: 1s;
+}
+
+.menu_hover:hover #hide {
+  display: none;
+}
